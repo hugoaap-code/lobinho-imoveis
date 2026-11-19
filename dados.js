@@ -104,7 +104,7 @@ window.LOBINHO = {
       area: 155,
       areaTerreno: 306,
       destaques: ["3 suítes e 2 lavabos", "Sala e cozinha gourmet integradas", "Piscina", "Escritório", "4 vagas, 2 cobertas", "Imóvel quitado"],
-      descricao: "Casa no Condomínio Terras de Alphaville, em Mirassol: 306,25 m² de terreno e 155,32 m² construídos. 3 suítes, 2 lavabos, sala e cozinha gourmet integradas, escritório e piscina. 4 vagas de garagem, sendo 2 cobertas. Imóvel quitado.\n\nFotos e visita com o Lobinho.",
+      descricao: "Casa no Condomínio Terras de Alphaville, em Mirassol: 306,25 m² de terreno e 155,32 m² construídos. 3 suítes, 2 lavabos, sala e cozinha gourmet integradas, escritório e piscina. 4 vagas de garagem, sendo 2 cobertas. Imóvel quitado.\n\nFotos e visita com o Lobinho.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -125,7 +125,7 @@ window.LOBINHO = {
       area: null,
       areaTerreno: null,
       destaques: ["3º andar", "Mesmo prédio do LB-006", "Acabamento de entrega da construtora"],
-      descricao: "Apartamento no 3º andar do Edifício Monreal Tarraf, no mesmo prédio do LB-006, com o acabamento de entrega da construtora.\n\nConsulte com o Lobinho a metragem, as vagas e as condições.",
+      descricao: "Apartamento no 3º andar do Edifício Monreal Tarraf, no mesmo prédio do LB-006, com o acabamento de entrega da construtora.\n\nConsulte com o Lobinho a metragem, as vagas e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -146,7 +146,7 @@ window.LOBINHO = {
       area: null,
       areaTerreno: null,
       destaques: ["2 dormitórios", "Planta toda integrada", "Já alugado", "Venda sem financiamento"],
-      descricao: "Apartamento de 2 dormitórios com planta toda integrada, no mesmo prédio dos apartamentos LB-013 e LB-015.\n\nApartamento com inquilino, bom para quem busca renda de aluguel. O imóvel está em nome da incorporadora, por isso a venda é sem financiamento. Visitas com agendamento.\n\nConsulte com o Lobinho a localização, a metragem e o valor.",
+      descricao: "Apartamento de 2 dormitórios com planta toda integrada, no mesmo prédio dos apartamentos LB-013 e LB-015.\n\nApartamento com inquilino, bom para quem busca renda de aluguel. O imóvel está em nome da incorporadora, por isso a venda é sem financiamento. Visitas com agendamento.\n\nConsulte com o Lobinho a localização, a metragem e o valor.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -167,7 +167,7 @@ window.LOBINHO = {
       area: null,
       areaTerreno: null,
       destaques: ["2 dormitórios", "Planta toda integrada", "Já alugado", "Venda sem financiamento"],
-      descricao: "Apartamento de 2 dormitórios com planta toda integrada, no mesmo prédio dos apartamentos LB-013 e LB-014.\n\nApartamento com inquilino, bom para quem busca renda de aluguel. O imóvel está em nome da incorporadora, por isso a venda é sem financiamento. Visitas com agendamento.\n\nConsulte com o Lobinho a localização, a metragem e o valor.",
+      descricao: "Apartamento de 2 dormitórios com planta toda integrada, no mesmo prédio dos apartamentos LB-013 e LB-014.\n\nApartamento com inquilino, bom para quem busca renda de aluguel. O imóvel está em nome da incorporadora, por isso a venda é sem financiamento. Visitas com agendamento.\n\nConsulte com o Lobinho a localização, a metragem e o valor.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -189,7 +189,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 10,
       destaques: ["15 baias para cavalos", "12 piquetes de Tifton e 3 campos de feno", "Pista de laço profissional", "2 represas e 2 casas", "Quiosque grande para festas e eventos", "Estrutura completa e montada"],
-      descricao: "Haras de alto padrão com 10 alqueires na região de São José do Rio Preto, sentido Guapiaçu. 15 baias, 12 piquetes de Tifton, 3 campos de feno, pasto de braquiária para gado, pista de laço profissional, 2 represas, 2 casas e quiosque grande para festas e eventos. Estrutura completa e montada.\n\nFotos e visita com o Lobinho.",
+      descricao: "Haras de alto padrão com 10 alqueires na região de São José do Rio Preto, sentido Guapiaçu. 15 baias, 12 piquetes de Tifton, 3 campos de feno, pasto de braquiária para gado, pista de laço profissional, 2 represas, 2 casas e quiosque grande para festas e eventos. Estrutura completa e montada.\n\nFotos e visita com o Lobinho.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -211,7 +211,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 80.5,
       destaques: ["Casa sede com 3 dormitórios e varanda com churrasqueira", "Casa de funcionário", "Curral para cerca de 300 cabeças", "6 divisões de pasto com cocho de sal e água natural", "Represa corta a propriedade", "Terra vermelha, nunca teve cana"],
-      descricao: "Fazenda de 80,5 alqueires em Ouroeste, a 300 m do asfalto e a cerca de 8 km da usina da cidade. Casa sede com 3 dormitórios, 2 salas, cozinha, varanda grande com churrasqueira, lavanderia coberta e poço caipira. Casa de funcionário, 6 divisões de pasto com cocho de sal e água natural, curral para cerca de 300 cabeças e represa cortando a propriedade.\n\nTerra vermelha, com árvores nativas (guarirobas, jatobás, ipês-roxos e aroeiras), que nunca teve plantio de cana. Valor de R$ 200 mil por alqueire.",
+      descricao: "Fazenda de 80,5 alqueires em Ouroeste, a 300 m do asfalto e a cerca de 8 km da usina da cidade. Casa sede com 3 dormitórios, 2 salas, cozinha, varanda grande com churrasqueira, lavanderia coberta e poço caipira. Casa de funcionário, 6 divisões de pasto com cocho de sal e água natural, curral para cerca de 300 cabeças e represa cortando a propriedade.\n\nTerra vermelha, com árvores nativas (guarirobas, jatobás, ipês-roxos e aroeiras), que nunca teve plantio de cana. Valor de R$ 200 mil por alqueire.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -233,7 +233,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 24,
       destaques: ["24 alqueires no georreferenciamento", "Parte da área arrendada para usina de cana", "A cerca de 12 km da usina", "Área com bastante mata"],
-      descricao: "Propriedade rural de 24 alqueires (conforme o georreferenciamento) em Mirassolândia, região de Rio Preto. Parte da área está arrendada para usina de cana, que fica a cerca de 12 km.\n\nConsulte com o Lobinho o contrato de arrendamento, as benfeitorias e a documentação.",
+      descricao: "Propriedade rural de 24 alqueires (conforme o georreferenciamento) em Mirassolândia, região de Rio Preto. Parte da área está arrendada para usina de cana, que fica a cerca de 12 km.\n\nConsulte com o Lobinho o contrato de arrendamento, as benfeitorias e a documentação.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -255,7 +255,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 10,
       destaques: ["9 alqueires aproveitáveis para cana", "Energia elétrica", "Poço artesiano", "Bem localizada", "Estuda permuta de até R$ 700 mil"],
-      descricao: "Área de 10 alqueires próxima a Votuporanga, com 9 alqueires aproveitáveis para cana. Tem energia elétrica e poço artesiano e é bem localizada.\n\nO proprietário estuda receber até R$ 700 mil em permuta. Fotos e localização com o Lobinho.",
+      descricao: "Área de 10 alqueires próxima a Votuporanga, com 9 alqueires aproveitáveis para cana. Tem energia elétrica e poço artesiano e é bem localizada.\n\nO proprietário estuda receber até R$ 700 mil em permuta. Fotos e localização com o Lobinho.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -277,7 +277,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 24,
       destaques: ["14 alqueires em cana", "2 casas, barracão e tulha", "Curral e piquete com cocho", "Piscina", "Cercas e benfeitorias novas"],
-      descricao: "Propriedade de 24 alqueires na região de Monte Aprazível, com 14 alqueires em cana. Tem duas casas, barracão, tulha, curral e piquete com cocho, além de piscina. Cercas e benfeitorias novas.\n\nValor de R$ 215 mil por alqueire. O proprietário prefere não divulgar fotos: fale com o Lobinho para conhecer.",
+      descricao: "Propriedade de 24 alqueires na região de Monte Aprazível, com 14 alqueires em cana. Tem duas casas, barracão, tulha, curral e piquete com cocho, além de piscina. Cercas e benfeitorias novas.\n\nValor de R$ 215 mil por alqueire. O proprietário prefere não divulgar fotos: fale com o Lobinho para conhecer.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -299,7 +299,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 2,
       destaques: ["2 alqueires", "Haras pronto em Rio Preto", "Visitas com agendamento"],
-      descricao: "Haras de 2 alqueires em São José do Rio Preto.\n\nConsulte com o Lobinho a estrutura (baias, pista e casa) e agende uma visita.",
+      descricao: "Haras de 2 alqueires em São José do Rio Preto.\n\nConsulte com o Lobinho a estrutura (baias, pista e casa) e agende uma visita.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -320,7 +320,7 @@ window.LOBINHO = {
       area: null,
       areaTerreno: null,
       destaques: ["Muitos armários planejados", "Área gourmet"],
-      descricao: "Casa no Residencial Palestra, em São José do Rio Preto, com muitos armários planejados e área gourmet.\n\nConsulte com o Lobinho a metragem, o número de quartos e a visita.",
+      descricao: "Casa no Residencial Palestra, em São José do Rio Preto, com muitos armários planejados e área gourmet.\n\nConsulte com o Lobinho a metragem, o número de quartos e a visita.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -341,7 +341,7 @@ window.LOBINHO = {
       area: null,
       areaTerreno: null,
       destaques: ["Oportunidade para reformar e valorizar", "Ao lado de terreno"],
-      descricao: "Casa em São José do Rio Preto que precisa de pintura e pequenos reparos: boa oportunidade para quem quer reformar ao próprio gosto e valorizar o imóvel.\n\nConsulte com o Lobinho a localização, a metragem e a visita.",
+      descricao: "Casa em São José do Rio Preto que precisa de pintura e pequenos reparos: boa oportunidade para quem quer reformar ao próprio gosto e valorizar o imóvel.\n\nConsulte com o Lobinho a localização, a metragem e a visita.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -362,7 +362,7 @@ window.LOBINHO = {
       area: null,
       areaTerreno: 60000,
       destaques: ["60.000 m² (cerca de 2,5 alqueires)", "Valor de R$ 20 por m²", "Venda exclusiva pelo Lobinho"],
-      descricao: "Área de 60 mil m² (cerca de 2,5 alqueires) na região de São José do Rio Preto, a R$ 20 por m².\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Área de 60 mil m² (cerca de 2,5 alqueires) na região de São José do Rio Preto, a R$ 20 por m².\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -384,7 +384,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 3.5,
       destaques: ["Casa de alto padrão", "Pasto para pecuária", "Mangueira (curral)", "Poço artesiano e caixa d'água", "Pequena represa"],
-      descricao: "Sítio de 3,5 alqueires em Uchoa, na pecuária, a 2 km da cidade e 1 km do asfalto. Casa de alto padrão, mangueira, poço artesiano, caixa d'água e pequena represa. Bem localizado.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Sítio de 3,5 alqueires em Uchoa, na pecuária, a 2 km da cidade e 1 km do asfalto. Casa de alto padrão, mangueira, poço artesiano, caixa d'água e pequena represa. Bem localizado.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -406,7 +406,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 30,
       destaques: ["Mais de 30 alqueires", "Passagem de linha de transmissão (linhão)"],
-      descricao: "Sítio com pouco mais de 30 alqueires na região de Nhandeara, com passagem de linha de transmissão de energia.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Sítio com pouco mais de 30 alqueires na região de Nhandeara, com passagem de linha de transmissão de energia.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -428,7 +428,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 8.76,
       destaques: ["8,76 alqueires", "A 3 km de Mirassol", "R$ 300 mil por alqueire"],
-      descricao: "Área de 8,76 alqueires a 3 km de Mirassol, a R$ 300 mil por alqueire.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Área de 8,76 alqueires a 3 km de Mirassol, a R$ 300 mil por alqueire.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -450,7 +450,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 9,
       destaques: ["9 alqueires, todos em cana", "Arrendada para usina (60 t por alqueire)", "A 6 km da pista"],
-      descricao: "Área de 9 alqueires em José Bonifácio, toda em cana e arrendada para usina a 60 toneladas por alqueire. Fica a 6 km da pista.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Área de 9 alqueires em José Bonifácio, toda em cana e arrendada para usina a 60 toneladas por alqueire. Fica a 6 km da pista.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -472,7 +472,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 266,
       destaques: ["266 alqueires paulistas", "Cana própria", "Água para irrigar toda a área", "Sede, barracão e casa de funcionário", "Represa", "Menos de 20 alqueires de APP"],
-      descricao: "Fazenda de 266 alqueires paulistas em Morro Agudo, a 12 km da cidade e 10 km da usina. Cana própria, com 110 hectares para reforma, água para irrigar toda a área e menos de 20 alqueires de APP. Sede, barracão, casa de funcionário e represa. Dividida em 4 matrículas.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Fazenda de 266 alqueires paulistas em Morro Agudo, a 12 km da cidade e 10 km da usina. Cana própria, com 110 hectares para reforma, água para irrigar toda a área e menos de 20 alqueires de APP. Sede, barracão, casa de funcionário e represa. Dividida em 4 matrículas.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -494,7 +494,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 82,
       destaques: ["Mansão com piscina de 12 × 25 m", "Salão de festas com churrasqueira", "24 baias para cavalos", "Curral coberto para 1.000 cabeças", "2 represas grandes", "1.800 m de asfalto interno"],
-      descricao: "Fazenda de 82 alqueires com frente para a pista. Mansão com piscina de 12 × 25 m (300 mil litros), salão de festas grande com churrasqueira, 24 baias para cavalos e 2 represas grandes. 1.800 m de asfalto interno até o curral, todo em aroeira, com tronco e balança; curralama toda coberta, para 1.000 cabeças.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Fazenda de 82 alqueires com frente para a pista. Mansão com piscina de 12 × 25 m (300 mil litros), salão de festas grande com churrasqueira, 24 baias para cavalos e 2 represas grandes. 1.800 m de asfalto interno até o curral, todo em aroeira, com tronco e balança; curralama toda coberta, para 1.000 cabeças.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -516,7 +516,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 114,
       destaques: ["114 alqueires na pecuária", "Casa sede e casa de caseiro", "Curralama completa", "Barracão para máquinas e insumos", "Poço artesiano"],
-      descricao: "Fazenda de 114 alqueires em Cardoso, sentido Porto Militão, a 3 km do asfalto, toda na pecuária. Casa sede, casa de caseiro, curralama completa, barracão para máquinas e insumos e poço artesiano. Valor de R$ 220 mil por alqueire.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Fazenda de 114 alqueires em Cardoso, sentido Porto Militão, a 3 km do asfalto, toda na pecuária. Casa sede, casa de caseiro, curralama completa, barracão para máquinas e insumos e poço artesiano. Valor de R$ 220 mil por alqueire.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -538,7 +538,7 @@ window.LOBINHO = {
       areaTerreno: null,
       alqueires: 66,
       destaques: ["66 alqueires", "Pecuária", "R$ 200 mil por alqueire"],
-      descricao: "Fazenda de 66 alqueires em José Bonifácio, na pecuária, a R$ 200 mil por alqueire.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.",
+      descricao: "Fazenda de 66 alqueires em José Bonifácio, na pecuária, a R$ 200 mil por alqueire.\n\nConsulte com o Lobinho a disponibilidade, a documentação e as condições.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
@@ -559,7 +559,7 @@ window.LOBINHO = {
       area: null,
       areaTerreno: null,
       destaques: ["Frente para a BR-153", "Arrendado para usina (55 t por alqueire)", "Proposta de outra usina a 65 t", "R$ 280 mil por alqueire"],
-      descricao: "Sítio no distrito de Talhado, com frente para a BR-153, arrendado para usina a 55 toneladas por alqueire; outra usina já ofereceu 65 toneladas para a renovação. Valor de R$ 280 mil por alqueire.\n\nConsulte com o Lobinho o tamanho da área, a situação do contrato e a documentação.",
+      descricao: "Sítio no distrito de Talhado, com frente para a BR-153, arrendado para usina a 55 toneladas por alqueire; outra usina já ofereceu 65 toneladas para a renovação. Valor de R$ 280 mil por alqueire.\n\nConsulte com o Lobinho o tamanho da área, a situação do contrato e a documentação.\n\nImagem meramente ilustrativa: fotos reais com o Lobinho.",
       fotos: 1,
       capa: 1,
       videos: []
