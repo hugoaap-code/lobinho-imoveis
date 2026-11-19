@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Alcateia Urbana · Zeladoria comunitária em Rio Preto</title>
+<meta name="description" content="A Alcateia encontra o problema do bairro, abre o protocolo no canal certo e cobra até resolver. Rio Preto e região.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Alcateia Urbana">
+<meta property="og:title" content="Alcateia Urbana · Zeladoria comunitária em Rio Preto">
+<meta property="og:description" content="Bairro unido resolve. Foto no WhatsApp, protocolo no canal certo, cobrança até resolver e antes e depois no relatório.">
+<link rel="canonical" href="https://lobinho.hkamkt.com/alcateia/">
+<meta property="og:url" content="https://lobinho.hkamkt.com/alcateia/">
+<meta property="og:image" content="https://lobinho.hkamkt.com/alcateia/og.jpg?v=5218023c">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Alcateia Urbana: o pedido do seu bairro vira solução.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1B2D'/%3E%3Cpath fill='%23D5DEE9' d='M13 5 25 17h14L51 5l3 17 8 11-7 3 3 6-14 7-12 12-12-12-14-7 3-6-7-3 8-11z'/%3E%3Cpath fill='%23FF7A1A' d='m15 10 8 8-6 5zm34 0-8 8 6 5z'/%3E%3Cpath fill='%230F1B2D' d='m19 31 9 3-6 2.5zm26 0-9 3 6 2.5zM28 51h8l-4 5z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  TODO(WhatsApp): trocar 5517991154582 pelo número real do WhatsApp Business da Alcateia
+  (formato 55 + DDD + número, só dígitos, ex.: 5517999999999).
+  Basta mudar a constante WA_NUMBER no <script> no fim da página: ela reescreve todos os links [data-wa].
+  Os href no HTML são só fallback (sem JS).
+-->
+<style>
+:root{
+  --night:#0F1B2D; --night-2:#17283F; --night-3:#22385A;
+  --orange:#FF7A1A; --orange-2:#FFA65E; --orange-soft:#FFE7D4;
+  --green:#2BB673; --green-d:#16794A; --green-soft:#DDF4E8;
+  --paper:#F6F4EF; --paper-2:#EDE9DF; --white:#fff;
+  --ink:#0F1B2D; --muted:#4F5B6C; --line:#DED8CB;
+  --r:18px; --r-lg:28px;
+  --shadow:0 1px 2px rgba(15,27,45,.06),0 8px 24px rgba(15,27,45,.08);
+  --font:"Plus Jakarta Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --header-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.02em}
+p{margin:0}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+section{scroll-margin-top:calc(var(--header-h) + 8px)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;cursor:pointer;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--orange);color:var(--night);box-shadow:0 6px 0 -1px #C4560B}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 -1px #C4560B}
+.btn-primary:active{transform:translateY(2px);box-shadow:0 2px 0 -1px #C4560B}
+.btn-ghost{border-color:rgba(246,244,239,.35);color:var(--paper)}
+.btn-ghost:hover{border-color:var(--paper);background:rgba(246,244,239,.06)}
+.btn-dark{background:var(--night);color:var(--paper)}
+.btn-dark:hover{background:var(--night-3)}
+.btn-line{border-color:var(--night);color:var(--night);background:transparent}
+.btn-line:hover{background:var(--night);color:var(--paper)}
+.btn-sm{min-height:42px;padding:0 16px;font-size:15px}
+.btn-block{width:100%}
+
+/* ---------- header ---------- */
+.header{position:sticky;top:0;z-index:50;background:rgba(15,27,45,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.07)}
+.header .wrap{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--paper)}
+.brand svg{width:38px;height:38px}
+.brand-name{display:flex;flex-direction:column;line-height:1}
+.brand-name b{font-size:19px;font-weight:800;letter-spacing:-.02em}
+.brand-name small{font-size:10.5px;font-weight:700;letter-spacing:.32em;color:var(--orange);margin-top:3px}
+.nav{display:none;gap:26px}
+.nav a{color:rgba(246,244,239,.78);text-decoration:none;font-weight:600;font-size:15px}
+.nav a:hover{color:var(--paper)}
+.header .btn{min-height:40px;padding:0 16px;font-size:14px;box-shadow:none}
+.header .btn:hover{box-shadow:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--night);color:var(--paper);overflow:hidden;padding:36px 0 56px}
+.hero-map{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 15% 30%,rgba(15,27,45,.95),rgba(15,27,45,.55) 60%,rgba(15,27,45,.2));pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.eyebrow::before{content:"";display:inline-block;vertical-align:middle;margin:-2px 10px 0 4px;width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px rgba(255,122,26,.18)}
+.hero h1{margin-top:16px;font-size:clamp(34px,9vw,62px);font-weight:800}
+.hero h1 .pain{display:block;color:rgba(246,244,239,.62);font-size:.56em;font-weight:700;letter-spacing:-.01em;margin-bottom:12px}
+.hero h1 .pain s{text-decoration-color:var(--orange);text-decoration-thickness:3px;white-space:nowrap}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .lead{margin-top:18px;font-size:18px;color:rgba(246,244,239,.82);max-width:40ch}
+.hero-ctas{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.hero-ctas .btn{flex:1 1 auto}
+.hero-tag{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:rgba(246,244,239,.66)}
+.hero-tag span{display:inline-flex;align-items:center;gap:6px}
+.hero-tag svg{width:16px;height:16px;color:var(--green)}
+
+/* phone mock */
+.demo{display:flex;flex-direction:column;align-items:center;gap:12px}
+.phone{width:100%;max-width:330px;border-radius:40px;padding:10px;background:#060D17;box-shadow:0 0 0 1.5px #2B3D58,0 30px 60px -20px rgba(0,0,0,.7),0 0 80px -10px rgba(255,122,26,.25)}
+.screen{border-radius:31px;overflow:hidden;background:#EFE7DC}
+.wa-top{display:flex;align-items:center;gap:10px;padding:14px 14px 12px;background:var(--night-2);color:var(--paper)}
+.wa-top .av{width:36px;height:36px;border-radius:50%;background:var(--night-3);display:grid;place-items:center;flex:none}
+.wa-top .av svg{width:26px;height:26px}
+.wa-top b{display:block;font-size:15px}
+.wa-top small{font-size:12px;color:var(--green)}
+.chat{padding:14px 10px 16px;display:flex;flex-direction:column;gap:8px;min-height:390px;background-color:#EFE7DC;background-image:radial-gradient(rgba(15,27,45,.06) 1px,transparent 1px);background-size:14px 14px}
+.day{align-self:center;font-size:11px;font-weight:600;color:var(--muted);background:#fff;border-radius:8px;padding:3px 10px;margin-bottom:2px}
+.msg{max-width:84%;padding:6px 8px 5px;border-radius:12px;font-size:14px;line-height:1.38;color:#111B21;box-shadow:0 1px 1px rgba(0,0,0,.08);position:relative}
+.msg time{display:block;text-align:right;font-size:10.5px;color:#667781;margin-top:2px}
+.out{align-self:flex-end;background:#D9FDD3;border-top-right-radius:4px}
+.in{align-self:flex-start;background:#fff;border-top-left-radius:4px}
+.in b{color:var(--orange-d,#C4560B)}
+.photo{border-radius:8px;overflow:hidden;width:210px;margin-bottom:4px}
+.photo svg,.pin svg{width:100%;height:auto}
+.pin{border-radius:8px;overflow:hidden;width:210px}
+.pin-txt{font-size:12.5px;padding:5px 2px 0}
+.pin-txt b{display:block;font-size:13px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.chip-open{background:var(--orange-soft);color:#A9480A}
+.chip-done{background:var(--green-soft);color:var(--green-d)}
+.msg .chip{margin-top:6px}
+.demo-cap{font-size:12.5px;color:rgba(246,244,239,.6);letter-spacing:.02em}
+@media (prefers-reduced-motion:no-preference){
+  .chat .msg{opacity:0;transform:translateY(8px);animation:pop .45s ease forwards}
+  .chat .msg:nth-of-type(1){animation-delay:.2s}
+  .chat .msg:nth-of-type(2){animation-delay:.6s}
+  .chat .msg:nth-of-type(3){animation-delay:1.1s}
+  .chat .msg:nth-of-type(4){animation-delay:1.5s}
+  @keyframes pop{to{opacity:1;transform:none}}
+}
+
+/* ---------- sections ---------- */
+.sec{padding:64px 0}
+.sec-head{max-width:760px;margin-bottom:32px}
+.sec-head .eyebrow{color:#C4560B}
+.sec-head .eyebrow::before{box-shadow:0 0 0 4px rgba(255,122,26,.16)}
+.sec-head h2{margin-top:10px;font-size:clamp(28px,6.4vw,44px);font-weight:800}
+.sec-head p{margin-top:12px;font-size:17px;color:var(--muted)}
+.on-dark .sec-head p{color:rgba(246,244,239,.75)}
+.on-dark .sec-head .eyebrow{color:var(--orange)}
+
+/* dores */
+.pains{display:grid;gap:12px;grid-template-columns:1fr}
+.pain-card{display:flex;gap:14px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.ico{flex:none;width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:var(--night);color:var(--orange)}
+.ico svg{width:28px;height:28px}
+.pain-card h3{font-size:17px;font-weight:800}
+.pain-card p{font-size:15px;color:var(--muted);margin-top:2px;line-height:1.4}
+
+/* como funciona */
+.how{background:var(--paper-2)}
+.how-grid{display:grid;gap:36px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.step{position:relative;display:grid;grid-template-columns:52px 1fr;gap:14px;padding-bottom:26px}
+.step:last-child{padding-bottom:0}
+.step::before{counter-increment:s;content:counter(s);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:20px;background:var(--orange);color:var(--night);position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;left:25px;top:56px;bottom:4px;border-left:2px dashed #BDB4A2}
+.step:last-child::before{background:var(--green)}
+.step h3{font-size:19px;font-weight:800;padding-top:4px}
+.step p{color:var(--muted);margin-top:3px;font-size:15.5px}
+.report{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px;box-shadow:var(--shadow);max-width:460px;width:100%;justify-self:center}
+.report-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.report-top b{font-size:15px}
+.report-top small{display:block;color:var(--muted);font-size:12.5px;font-weight:500}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ba figure{margin:0}
+.ba svg{width:100%;height:auto;border-radius:12px}
+.ba figcaption{font-size:12.5px;font-weight:700;margin-top:6px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.report-rows{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;display:grid;gap:8px;font-size:14px}
+.report-rows div{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.illus{margin-top:12px;font-size:12px;color:var(--muted);text-align:center}
+
+/* para quem */
+.who{display:grid;gap:12px;grid-template-columns:1fr}
+.who-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px}
+.who-card .ico{background:var(--orange-soft);color:#B94F09}
+.who-card h3{font-size:18px;font-weight:800}
+.who-card p{font-size:15px;color:var(--muted);line-height:1.45}
+.who-card .tag{align-self:flex-start;font-size:12px;font-weight:700;color:var(--green-d);background:var(--green-soft);border-radius:999px;padding:3px 10px}
+.who-card.alt{background:var(--night);color:var(--paper);border-color:var(--night)}
+.who-card.alt p{color:rgba(246,244,239,.72)}
+.who-card.alt .ico{background:var(--night-3);color:var(--orange)}
+.who-card.alt .tag{background:rgba(43,182,115,.16);color:#6FE0A6}
+
+/* planos */
+.plans-sec{background:var(--night);color:var(--paper);position:relative;overflow:hidden}
+.launch{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--night);background:var(--green);padding:6px 12px;border-radius:8px;transform:rotate(-1.5deg)}
+.plans{display:grid;gap:14px;grid-template-columns:1fr}
+.plan{background:var(--night-2);border:1px solid rgba(246,244,239,.1);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:12px;position:relative}
+.plan.feat{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.plan .badge{position:absolute;top:-12px;right:18px;background:var(--orange);color:var(--night);font-size:12px;font-weight:800;padding:5px 11px;border-radius:999px}
+.plan .for{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.plan.feat .for{color:#B94F09}
+.plan h3{font-size:22px;font-weight:800}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+.price b{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.price span{font-size:15px;opacity:.8}
+.price s{font-size:15px;opacity:.6}
+.price-note{font-size:14px;opacity:.75;margin-top:-6px}
+.plan ul{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:7px;font-size:15px}
+.plan li{display:grid;grid-template-columns:18px 1fr;gap:8px;line-height:1.4}
+.plan li svg{width:18px;height:18px;color:var(--green);margin-top:2px}
+.plan .btn{margin-top:auto}
+.plan:not(.feat) .btn-line{border-color:rgba(246,244,239,.4);color:var(--paper)}
+.plan:not(.feat) .btn-line:hover{background:var(--paper);color:var(--night)}
+.soon{font-size:11px;font-weight:800;color:var(--night);background:var(--orange-2);border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle;letter-spacing:.04em}
+.plans-foot{margin-top:22px;font-size:14px;color:rgba(246,244,239,.7);max-width:720px}
+.plans-foot a{color:var(--orange);font-weight:700}
+
+/* parceiros / selo */
+.partner{display:grid;gap:32px;align-items:center}
+.seal-wrap{display:flex;justify-content:center}
+.seal{width:min(300px,78vw);height:auto;filter:drop-shadow(0 18px 30px rgba(15,27,45,.18))}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+.ticks li{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;font-size:16px}
+.ticks li svg{width:30px;height:30px;padding:6px;border-radius:9px;background:var(--green-soft);color:var(--green-d)}
+.partner .btn{margin-top:26px}
+
+/* faq */
+.faq-sec{background:var(--paper-2)}
+.faq{display:grid;gap:10px}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:var(--r)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 54px 18px 20px;font-weight:700;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:20px;top:50%;width:22px;height:22px;margin-top:-11px;border-radius:50%;background:var(--orange-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B94F09' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M12 7v10M7 12h10'/%3E%3C/svg%3E") center/14px no-repeat;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 20px 18px;color:var(--muted);font-size:16px}
+
+/* final cta */
+.final{background:var(--orange);color:var(--night);position:relative;overflow:hidden}
+.final .wrap{position:relative;z-index:1;display:grid;gap:22px;justify-items:start}
+.final h2{font-size:clamp(30px,7vw,52px);font-weight:800;max-width:16ch}
+.final p{font-size:18px;max-width:40ch;font-weight:500}
+.final-wolf{position:absolute;right:-60px;bottom:-70px;width:300px;opacity:.14;transform:rotate(-12deg)}
+
+/* footer */
+.footer{background:var(--night);color:rgba(246,244,239,.72);padding:40px 0 28px;font-size:14px}
+.footer .wrap{display:grid;gap:18px}
+.footer .brand{color:var(--paper)}
+.foot-row{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;border-top:1px solid rgba(246,244,239,.1);padding-top:18px}
+.footer .mars{color:var(--orange);font-weight:700}
+.footer .tec b{color:var(--paper)}
+
+/* mobile WhatsApp bar */
+.wa-fab{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;box-shadow:0 10px 30px rgba(15,27,45,.35);border-radius:999px}
+.wa-fab .btn{width:100%;box-shadow:0 5px 0 -1px #C4560B}
+body{padding-bottom:84px}
+
+/* ---------- breakpoints ---------- */
+@media (min-width:560px){
+  .pains{grid-template-columns:1fr 1fr}
+  .who{grid-template-columns:1fr 1fr}
+  .plans{grid-template-columns:1fr 1fr}
+  .hero-ctas .btn{flex:0 0 auto}
+}
+@media (min-width:880px){
+  :root{--header-h:72px}
+  .wrap{padding:0 32px}
+  .nav{display:flex}
+  .header .btn{min-height:44px;font-size:15px}
+  .hero{padding:72px 0 88px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;gap:56px}
+  .hero .lead{font-size:20px}
+  .sec{padding:96px 0}
+  .pains{grid-template-columns:repeat(3,1fr);gap:16px}
+  .pain-card{flex-direction:column;align-items:flex-start;padding:22px}
+  .how-grid{grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .who{grid-template-columns:repeat(6,1fr);gap:16px}
+  .who-card{grid-column:span 2}
+  .who-card:nth-child(4),.who-card:nth-child(5){grid-column:span 3}
+  .plans{grid-template-columns:repeat(3,1fr);gap:18px}
+  .partner{grid-template-columns:.8fr 1.2fr;gap:64px}
+  .seal{width:340px}
+  .faq-sec .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+  .final .wrap{grid-template-columns:1fr auto;align-items:center}
+  .final-wolf{width:420px;right:-40px;bottom:-120px}
+  .wa-fab{display:none}
+  body{padding-bottom:0}
+}
+@media (max-width:379px){
+  .brand-name small{letter-spacing:.22em}
+  .header .btn span{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== SVG sprite (logo + ícones) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="wolf" viewBox="0 0 64 64">
+      <path fill="#D5DEE9" d="M13 5 25 17h14L51 5l3 17 8 11-7 3 3 6-14 7-12 12-12-12-14-7 3-6-7-3 8-11z"/>
+      <path fill="#AEBDD0" d="M25 17h14l-7 12zM10 22 2 33l7 3 10-5zm44 0 8 11-7 3-10-5z"/>
+      <path fill="#F6F4EF" d="m32 29 9 10-9 22-9-22z"/>
+      <path fill="#FF7A1A" d="m15 10 8 8-6 5zm34 0-8 8 6 5z"/>
+      <path fill="#0F1B2D" d="m19 31 9 3-6 2.5zm26 0-9 3 6 2.5zM28 51h8l-4 5z"/>
+    </symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2a9.8 9.8 0 0 0-8.4 14.9L2.3 21.7l4.7-1.2A9.8 9.8 0 1 0 12 2.2Zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.5-.3Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <!-- dores -->
+    <symbol id="i-mato" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 28h26"/><path d="M7 28c0-6-1.5-10-4-13M11 28c0-8 1-13 4-17M15 28c0-6 0-10-1.5-13M21 28c0-5 1.5-9 5-12M25 28c0-4-.5-7-2.5-9"/><path d="M5 24c3-3 6 1 9-1.5s5-2 7 0 4 1 5-1" stroke-width="2.6"/><circle cx="26.6" cy="21.2" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-buraco" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3 4 29M21 3l7 26M16 4v3M16 11v3"/><path d="M10.5 22.5c0-2 2.5-3.5 5.5-3.5s5.5 1.5 5.5 3.5-2.5 3.5-5.5 3.5-5.5-1.5-5.5-3.5Z"/><path d="M13 22.5c1-.8 2-1.2 3-1.2s2.2.4 3 1.2"/></g></symbol>
+    <symbol id="i-luz" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 29V9a4 4 0 0 1 4-4h5"/><path d="M15 9h9l-1.5 4h-6z"/><path d="M5 29h8"/><path d="M4 4l24 24"/></g></symbol>
+    <symbol id="i-entulho" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 28h26"/><path d="M5 28v-7h8v7M13 28V17h9v11M22 28v-5h6v5"/><path d="m7 21 3-6 4 2M17 17l2-5 4 2"/></g></symbol>
+    <symbol id="i-agua" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16V9l8-5 8 5v7"/><path d="M13 16v-4h6v4"/><path d="M3 21c2.2 0 2.2-1.6 4.4-1.6s2.2 1.6 4.4 1.6 2.2-1.6 4.4-1.6 2.2 1.6 4.4 1.6 2.2-1.6 4.4-1.6 2.2 1.6 3 1.6"/><path d="M3 27c2.2 0 2.2-1.6 4.4-1.6s2.2 1.6 4.4 1.6 2.2-1.6 4.4-1.6 2.2 1.6 4.4 1.6 2.2-1.6 4.4-1.6 2.2 1.6 3 1.6"/></g></symbol>
+    <symbol id="i-dengue" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="9" r="2.2"/><path d="M16 6.8V3M16 11.5V25"/><path d="M16 14c-4-4-10-4-11-1.5 3 2.5 7 2.5 11 1.5ZM16 14c4-4 10-4 11-1.5-3 2.5-7 2.5-11 1.5Z"/><path d="m16 18-5 4-1 5M16 18l5 4 1 5M16 16l-6 1M16 16l6 1"/></g></symbol>
+    <!-- públicos -->
+    <symbol id="i-condo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 28V14l7-5 7 5v14"/><path d="M17 28V18l6-4 6 4v10"/><path d="M8 28v-6h4v6M2 28h28"/></g></symbol>
+    <symbol id="i-loja" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 6 5h20l2 7"/><path d="M4 12c0 2 1.8 3.5 4 3.5s4-1.5 4-3.5c0 2 1.8 3.5 4 3.5s4-1.5 4-3.5c0 2 1.8 3.5 4 3.5s4-1.5 4-3.5"/><path d="M6 16v12h20V16M13 28v-7h6v7"/></g></symbol>
+    <symbol id="i-grupo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="4"/><circle cx="22" cy="12" r="3.2"/><path d="M3 27c0-4.4 3.6-7 8-7s8 2.6 8 7"/><path d="M19 20.5c1-.3 1.9-.5 3-.5 3.9 0 7 2.2 7 6"/></g></symbol>
+    <symbol id="i-curso" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 12 14-7 14 7-14 7z"/><path d="M8 15v7c4.5 3 11.5 3 16 0v-7M30 12v8"/></g></symbol>
+    <symbol id="i-pref" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 16 5l13 7z"/><path d="M6 12v13M12 12v13M20 12v13M26 12v13M3 28h26"/></g></symbol>
+    <symbol id="i-selo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="6"/><path d="m8.5 15-1.5 7 5-2.5 5 2.5-1.5-7"/></g></symbol>
+    <symbol id="i-relat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5"/></g></symbol>
+    <symbol id="i-neutro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M5 7l-3 7a3.5 3.5 0 0 0 6 0zM19 7l-3 7a3.5 3.5 0 0 0 6 0zM8 21h8"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Alcateia Urbana, início">
+      <svg aria-hidden="true"><use href="#wolf"/></svg>
+      <span class="brand-name"><b>Alcateia</b><small>URBANA</small></span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#para-quem">Para quem</a>
+      <a href="#planos">Planos</a>
+      <a href="#empresas">Empresas</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <!-- TODO(WhatsApp): número real em WA_NUMBER (script no fim) -->
+    <a class="btn btn-primary" data-wa="Olá! Vim pelo site e quero um diagnóstico do meu bairro." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20diagn%C3%B3stico%20do%20meu%20bairro." target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg><span>Diagnóstico</span>
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero">
+  <svg class="hero-map" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g stroke="#2A4061" stroke-width="2" fill="none">
+      <path d="M-20 120 L1220 60M-20 300 L1220 260M-20 480 L1220 470M-20 640 L1220 690"/>
+      <path d="M140 -20 L210 720M420 -20 L470 720M700 -20 L690 720M960 -20 L900 720M1120 -20 L1180 720"/>
+      <path d="M-20 560 C300 520 520 380 760 380 S1100 300 1220 180" stroke="#34507A" stroke-width="6"/>
+    </g>
+    <g>
+      <circle cx="700" cy="90" r="5" fill="#FF7A1A"/><circle cx="700" cy="90" r="16" fill="#FF7A1A" opacity=".18"/>
+      <circle cx="925" cy="470" r="5" fill="#2BB673"/><circle cx="925" cy="470" r="16" fill="#2BB673" opacity=".18"/>
+      <circle cx="1145" cy="66" r="5" fill="#2BB673"/><circle cx="1145" cy="66" r="16" fill="#2BB673" opacity=".18"/>
+      <circle cx="1170" cy="560" r="5" fill="#FF7A1A"/><circle cx="1170" cy="560" r="16" fill="#FF7A1A" opacity=".18"/>
+      <circle cx="1060" cy="282" r="5" fill="#2BB673"/>
+      <circle cx="1000" cy="660" r="5" fill="#FF7A1A"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Zeladoria comunitária · Rio Preto e região</span>
+      <h1>
+        <span class="pain">“A gente reclama, protocola, liga… <s>e nada</s>.”</span>
+        Com a Alcateia, o pedido <em>vira solução.</em>
+      </h1>
+      <p class="lead">A gente abre o protocolo no canal certo e cobra até resolver.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" data-wa="Olá! Vim pelo site e quero um diagnóstico do meu bairro." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20diagn%C3%B3stico%20do%20meu%20bairro." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir diagnóstico do bairro
+        </a>
+        <a class="btn btn-ghost" href="#planos">Ver planos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="hero-tag">
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Pelo WhatsApp</span>
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Apartidária</span>
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Antes e depois no relatório</span>
+      </div>
+    </div>
+
+    <figure class="demo" aria-label="Demonstração ilustrativa de conversa com o KaBot no WhatsApp">
+      <div class="phone">
+        <div class="screen">
+          <div class="wa-top">
+            <span class="av"><svg aria-hidden="true"><use href="#wolf"/></svg></span>
+            <span><b>KaBot · Alcateia</b><small>online</small></span>
+          </div>
+          <div class="chat">
+            <span class="day">Hoje</span>
+            <div class="msg out">
+              <div class="photo">
+                <svg viewBox="0 0 210 120" aria-label="Foto: terreno com mato alto">
+                  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8EC9F0"/><stop offset="1" stop-color="#D7EEF9"/></linearGradient></defs>
+                  <rect width="210" height="120" fill="url(#sky)"/>
+                  <circle cx="176" cy="24" r="11" fill="#FFD36B"/>
+                  <rect x="0" y="62" width="210" height="58" fill="#9C8466"/>
+                  <path d="M0 70h210" stroke="#B9A07E" stroke-width="3"/>
+                  <g fill="#C9BBA4"><rect x="10" y="40" width="4" height="40"/><rect x="70" y="42" width="4" height="38"/><rect x="132" y="40" width="4" height="40"/><rect x="194" y="42" width="4" height="38"/></g>
+                  <path d="M0 50 L210 47" stroke="#C9BBA4" stroke-width="2"/>
+                  <g fill="#3E8E3A"><path d="M0 120 6 52 12 120zM14 120 22 40 28 120zM30 120 34 58 42 120zM44 120 54 36 58 120zM62 120 66 50 74 120zM76 120 86 42 90 120zM94 120 98 56 106 120zM108 120 118 34 122 120zM126 120 130 52 138 120zM140 120 150 40 154 120zM158 120 162 56 170 120zM172 120 182 38 186 120zM190 120 196 50 204 120z"/></g>
+                  <g fill="#5DB24D"><path d="M6 120 14 62 18 120zM36 120 46 54 50 120zM68 120 78 60 82 120zM100 120 110 50 114 120zM132 120 142 58 146 120zM164 120 174 52 178 120zM196 120 204 64 210 120z"/></g>
+                  <path d="M60 104c8-6 14 4 22-2s12-4 18 0" fill="none" stroke="#5B4A2E" stroke-width="3.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              Mato alto no terreno da esquina 😩
+              <time>09:12</time>
+            </div>
+            <div class="msg out">
+              <div class="pin">
+                <svg viewBox="0 0 210 84" aria-label="Localização no mapa">
+                  <rect width="210" height="84" fill="#E8EEF2"/>
+                  <g stroke="#fff" stroke-width="9"><path d="M-5 30h220M-5 70h220M60-5v100M150-5v100"/></g>
+                  <rect x="70" y="38" width="70" height="24" fill="#CFE8C8"/>
+                  <path d="M105 52c-7-8-11-13-11-18a11 11 0 0 1 22 0c0 5-4 10-11 18Z" fill="#FF7A1A" stroke="#C4560B" stroke-width="1.5"/>
+                  <circle cx="105" cy="34" r="4" fill="#fff"/>
+                </svg>
+              </div>
+              <div class="pin-txt"><b>📍 Localização enviada</b>Rio Preto, SP</div>
+              <time>09:12</time>
+            </div>
+            <div class="msg in">
+              Recebi foto e local. Problema registrado ✅
+              <time>09:13</time>
+            </div>
+            <div class="msg in">
+              <b>Protocolo aberto na Prefeitura.</b> Te aviso quando resolver.
+              <br><span class="chip chip-open">Acompanhando</span>
+              <time>09:13</time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption class="demo-cap">Demonstração ilustrativa</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== 2. DORES ===== -->
+<section class="sec" id="dores">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Dores de Rio Preto</span>
+      <h2>O que fica parado no seu bairro?</h2>
+    </div>
+    <div class="pains">
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-mato"/></svg></span><div><h3>Mato e cobra</h3><p>Terreno abandonado virando mato, bicho e lixo.</p></div></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-buraco"/></svg></span><div><h3>Buraco</h3><p>Rua esburacada que quebra carro e derruba moto.</p></div></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-luz"/></svg></span><div><h3>Rua escura</h3><p>Lâmpada apagada há semanas e medo de passar.</p></div></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-entulho"/></svg></span><div><h3>Entulho</h3><p>Descarte irregular na calçada, na praça, na esquina.</p></div></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-agua"/></svg></span><div><h3>Alagamento</h3><p>Choveu forte, a rua vira rio de novo.</p></div></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-dengue"/></svg></span><div><h3>Dengue</h3><p>Criadouro parado ao lado de casa, ninguém resolve.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. COMO FUNCIONA ===== -->
+<section class="sec how" id="como-funciona">
+  <div class="wrap how-grid">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do celular do morador ao problema resolvido.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><div><h3>Foto no WhatsApp</h3><p>Foto e localização para o KaBot, nosso assistente.</p></div></li>
+        <li class="step"><div><h3>Protocolo no canal certo</h3><p>A gente sabe qual órgão resolve cada problema.</p></div></li>
+        <li class="step"><div><h3>Cobrança até resolver</h3><p>Prazo vencido? A gente cobra e escala.</p></div></li>
+        <li class="step"><div><h3>Antes e depois no relatório</h3><p>Todo mês, o que foi resolvido, com fotos.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="report" aria-label="Exemplo ilustrativo de relatório mensal">
+      <div class="report-top">
+        <div><b>Relatório do mês</b><small>Seu bairro · exemplo</small></div>
+        <span class="chip chip-done">Resolvido</span>
+      </div>
+      <div class="ba">
+        <figure>
+          <svg viewBox="0 0 160 110" aria-label="Antes: terreno com mato alto">
+            <rect width="160" height="110" fill="#CFE6F3"/><rect y="62" width="160" height="48" fill="#9C8466"/>
+            <g fill="#3E8E3A"><path d="M0 110 6 40 12 110zM14 110 22 30 28 110zM30 110 36 46 42 110zM44 110 54 28 58 110zM62 110 66 42 74 110zM76 110 86 32 90 110zM94 110 98 46 106 110zM108 110 118 26 122 110zM126 110 130 44 138 110zM140 110 150 32 154 110z"/></g>
+            <g fill="#5DB24D"><path d="M6 110 14 54 18 110zM36 110 46 46 50 110zM68 110 78 52 82 110zM100 110 110 40 114 110zM132 110 142 50 146 110z"/></g>
+          </svg>
+          <figcaption>Antes</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 160 110" aria-label="Depois: terreno limpo">
+            <rect width="160" height="110" fill="#CFE6F3"/><circle cx="130" cy="24" r="10" fill="#FFD36B"/>
+            <rect y="62" width="160" height="48" fill="#A99272"/>
+            <rect y="84" width="160" height="26" fill="#7CC36B"/>
+            <g fill="#5DB24D"><path d="M0 86h160v4H0z"/></g>
+            <rect x="24" y="44" width="5" height="40" fill="#7A5B3A"/><circle cx="26.5" cy="40" r="14" fill="#3E8E3A"/>
+          </svg>
+          <figcaption>Depois</figcaption>
+        </figure>
+      </div>
+      <div class="report-rows">
+        <div><span>Mato alto · terreno da esquina</span><span class="chip chip-done">Resolvido</span></div>
+        <div><span>Lâmpada apagada · rua de cima</span><span class="chip chip-open">Cobrando</span></div>
+      </div>
+      <p class="illus">Exemplo ilustrativo</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. PARA QUEM ===== -->
+<section class="sec" id="para-quem">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Para quem</span>
+      <h2>Quem cuida do bairro com a gente.</h2>
+    </div>
+    <div class="who">
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-condo"/></svg></span><h3>Loteamentos e condomínios</h3><p>Do muro para fora: acesso, área verde, iluminação.</p></article>
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-loja"/></svg></span><h3>Empresas e ruas comerciais</h3><p>Acesso sem buraco, rua iluminada, calçada limpa.</p></article>
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-grupo"/></svg></span><h3>Associações de bairro</h3><p>Zeladoria paga pelo comércio local, não pelo morador.</p><span class="tag">Patrocinado</span></article>
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-curso"/></svg></span><h3>Lideranças</h3><p>Curso e mentoria para aplicar o método no seu bairro.</p><span class="tag">Curso e mentoria</span></article>
+      <article class="who-card alt"><span class="ico"><svg aria-hidden="true"><use href="#i-pref"/></svg></span><h3>Prefeituras</h3><p>Parceria para mapear e priorizar as demandas dos bairros.</p><span class="tag">Programa Zeladoria Comunitária</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. PLANOS ===== -->
+<section class="sec plans-sec on-dark" id="planos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Planos</span>
+      <h2>Escolha o tamanho do cuidado.</h2>
+      <span class="launch">Valores de lançamento</span>
+    </div>
+    <div class="plans">
+      <article class="plan feat">
+        <span class="badge">Comece aqui</span>
+        <span class="for">Porta de entrada</span>
+        <h3>Diagnóstico do Bairro</h3>
+        <div class="price"><b>R$ 900 a 1.500</b><span>avulso</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Ronda com fotos georreferenciadas</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Mapa de problemas e protocolos abertos</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Dossiê em PDF</li>
+        </ul>
+        <a class="btn btn-primary btn-block" data-wa="Olá! Vim pelo site e quero um diagnóstico do meu bairro." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20diagn%C3%B3stico%20do%20meu%20bairro." target="_blank" rel="noopener">Pedir diagnóstico</a>
+      </article>
+      <article class="plan">
+        <span class="for">Associação de bairro</span>
+        <h3>Bairro Cuidado</h3>
+        <div class="price"><b>R$ 590</b><span>/mês</span></div>
+        <p class="price-note">Dividido entre 3 a 5 empresas patrocinadoras.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>KaBot no WhatsApp do bairro</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Protocolos, cobrança e relatório mensal</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Selo dos patrocinadores</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site e quero saber do plano Bairro Cuidado para a minha associação." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20do%20plano%20Bairro%20Cuidado." target="_blank" rel="noopener">Quero para meu bairro</a>
+      </article>
+      <article class="plan">
+        <span class="for">Loteamento e condomínio</span>
+        <h3>Entorno em Dia</h3>
+        <div class="price"><b>R$ 990</b><span>/mês</span></div>
+        <p class="price-note">Até 300 lotes · R$ 1.490/mês acima.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Ronda quinzenal do entorno</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Protocolos e escalonamento</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Relatório para a diretoria</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>1 mutirão por trimestre</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site e quero saber do plano Entorno em Dia para o meu loteamento/condomínio." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20do%20plano%20Entorno%20em%20Dia." target="_blank" rel="noopener">Falar do meu condomínio</a>
+      </article>
+      <article class="plan">
+        <span class="for">Empresa e rua comercial</span>
+        <h3>Empresa Vizinha</h3>
+        <div class="price"><b>R$ 390</b><span>/mês</span></div>
+        <p class="price-note">Por endereço.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Monitoramento do acesso e entorno</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Protocolos e cobrança</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Relatório mensal</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site e quero saber do plano Empresa Vizinha." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20do%20plano%20Empresa%20Vizinha." target="_blank" rel="noopener">Cuidar da minha rua</a>
+      </article>
+      <article class="plan">
+        <span class="for">Lideranças</span>
+        <h3>Método Alcateia <span class="soon">EM BREVE</span></h3>
+        <div class="price"><b>R$ 97</b><s>R$ 197</s></div>
+        <p class="price-note">Preço de lançamento.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Curso online gravado, 6 módulos</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Mapear, protocolar, cobrar, mobilizar</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site e quero entrar na lista de espera do curso Método Alcateia." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20entrar%20na%20lista%20de%20espera%20do%20M%C3%A9todo%20Alcateia." target="_blank" rel="noopener">Entrar na lista</a>
+      </article>
+      <article class="plan">
+        <span class="for">Associações e gestores</span>
+        <h3>Mentoria Alcateia</h3>
+        <div class="price"><b>R$ 1.497</b><span>em grupo</span></div>
+        <p class="price-note">Individual: R$ 3.900.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>8 semanas de acompanhamento</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Método aplicado no seu bairro</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site e quero saber da Mentoria Alcateia." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20da%20Mentoria%20Alcateia." target="_blank" rel="noopener">Quero a mentoria</a>
+      </article>
+    </div>
+    <p class="plans-foot">Valores de lançamento, sujeitos a ajuste. Prefeitura? <a data-wa="Olá! Vim pelo site e quero conversar sobre o Programa Zeladoria Comunitária para prefeituras." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20conversar%20sobre%20o%20Programa%20Zeladoria%20Comunit%C3%A1ria." target="_blank" rel="noopener">Conheça o Programa Zeladoria Comunitária</a>.</p>
+  </div>
+</section>
+
+<!-- ===== 6. EMPRESAS PARCEIRAS ===== -->
+<section class="sec" id="empresas">
+  <div class="wrap partner">
+    <div class="seal-wrap">
+      <svg class="seal" viewBox="0 0 300 300" role="img" aria-label="Selo Bairro Cuidado por sua empresa">
+        <defs><path id="ring" d="M150 150m-112 0a112 112 0 1 1 224 0a112 112 0 1 1-224 0"/></defs>
+        <circle cx="150" cy="150" r="146" fill="#0F1B2D"/>
+        <circle cx="150" cy="150" r="134" fill="none" stroke="#FF7A1A" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/>
+        <circle cx="150" cy="150" r="88" fill="#F6F4EF"/>
+        <text font-family="Plus Jakarta Sans,system-ui,sans-serif" font-weight="800" font-size="19" letter-spacing="4.5" fill="#F6F4EF"><textPath href="#ring" startOffset="0" textLength="688" lengthAdjust="spacing">BAIRRO UNIDO RESOLVE · ALCATEIA URBANA ·</textPath></text>
+        <circle cx="150" cy="104" r="30" fill="#0F1B2D"/>
+        <use href="#wolf" x="127" y="80" width="46" height="46"/>
+        <text x="150" y="160" text-anchor="middle" font-family="Plus Jakarta Sans,system-ui,sans-serif" font-weight="700" font-size="12" letter-spacing="2" fill="#4F5B6C">BAIRRO CUIDADO POR</text>
+        <text x="150" y="188" text-anchor="middle" font-family="Plus Jakarta Sans,system-ui,sans-serif" font-weight="800" font-size="23" fill="#0F1B2D">sua empresa</text>
+        <rect x="104" y="200" width="92" height="4" rx="2" fill="#2BB673"/>
+      </svg>
+    </div>
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">Empresas parceiras</span>
+        <h2>“Bairro Cuidado por <span style="color:#C4560B">sua empresa</span>”</h2>
+        <p>O comércio local patrocina a zeladoria e ganha o selo do bairro.</p>
+      </div>
+      <ul class="ticks">
+        <li><svg aria-hidden="true"><use href="#i-grupo"/></svg><span>3 a 5 empresas dividem o plano do bairro.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-selo"/></svg><span>Selo na vitrine, no relatório e nas redes.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-relat"/></svg><span>Relatório mensal mostra o que seu apoio resolveu.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-neutro"/></svg><span>Apartidário: patrocínio de serviço, nunca de campanha.</span></li>
+      </ul>
+      <a class="btn btn-dark" data-wa="Olá! Vim pelo site e quero patrocinar a zeladoria do meu bairro (selo Bairro Cuidado)." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20patrocinar%20a%20zeladoria%20do%20meu%20bairro." target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-wa"/></svg>Quero patrocinar meu bairro
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. FAQ ===== -->
+<section class="sec faq-sec" id="duvidas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas rápidas.</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Vocês fazem o serviço no lugar da prefeitura?</summary>
+        <p>Não. A gente faz o poder público fazer. Mutirões, só com autorização.</p>
+      </details>
+      <details>
+        <summary>É político?</summary>
+        <p>Não. A Alcateia é uma empresa de serviço, apartidária. Sem campanha, sem mandato.</p>
+      </details>
+      <details>
+        <summary>Meu bairro não tem dinheiro. E agora?</summary>
+        <p>No plano Bairro Cuidado, quem paga são empresas locais patrocinadoras, não o morador.</p>
+      </details>
+      <details>
+        <summary>Atende fora de Rio Preto?</summary>
+        <p>Sim: Rio Preto e região, como Mirassol, Bady Bassitt, Cedral e Guapiaçu.</p>
+      </details>
+      <details>
+        <summary>Como meus dados são usados?</summary>
+        <p>Conforme a LGPD: foto e localização servem só para abrir e acompanhar o protocolo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. CTA FINAL ===== -->
+<section class="sec final">
+  <svg class="final-wolf" aria-hidden="true" viewBox="0 0 64 64"><use href="#wolf"/></svg>
+  <div class="wrap">
+    <div>
+      <h2>Bairro unido resolve.</h2>
+      <p style="margin-top:12px">Comece pelo diagnóstico. A gente mapeia, protocola e cobra.</p>
+    </div>
+    <a class="btn btn-dark" data-wa="Olá! Vim pelo site e quero um diagnóstico do meu bairro." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20diagn%C3%B3stico%20do%20meu%20bairro." target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir diagnóstico do bairro
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Alcateia Urbana, voltar ao topo">
+      <svg aria-hidden="true"><use href="#wolf"/></svg>
+      <span class="brand-name"><b>Alcateia</b><small>URBANA</small></span>
+    </a>
+    <p>Zeladoria comunitária em Rio Preto e região. Bairro unido resolve.</p>
+    <div class="foot-row">
+      <span class="mars">Do bairro a Marte 🚀</span>
+      <span class="tec">Uma solução com tecnologia <b>HKA TEC</b></span>
+      <span>© 2026 Alcateia Urbana</span>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-fab">
+  <a class="btn btn-primary" data-wa="Olá! Vim pelo site e quero um diagnóstico do meu bairro." href="https://wa.me/5517991154582?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20diagn%C3%B3stico%20do%20meu%20bairro." target="_blank" rel="noopener">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir diagnóstico no WhatsApp
+  </a>
+</div>
+
+<script>
+  // TODO(WhatsApp): número real do WhatsApp Business da Alcateia (55 + DDD + número, só dígitos).
+  const WA_NUMBER = '5517991154582';
+  document.querySelectorAll('a[data-wa]').forEach(a => {
+    a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(a.dataset.wa);
+  });
+</script>
+</body>
+</html>
