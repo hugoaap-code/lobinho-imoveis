@@ -343,7 +343,7 @@ function drawGrid(){
     <article class="card">
       <a href="#/imovel/${im.id}" style="text-decoration:none;display:flex;flex-direction:column;flex:1">
         <div class="card-img"><img loading="lazy" src="${img(im,im.capa,1)}" alt="${esc(im.titulo)}">
-          <span class="tag">${esc(im.tipo)}</span><span class="nphotos">${im.fotos} fotos${im.videos.length?' · vídeo':''}</span></div>
+          <span class="tag">${esc(im.tipo)}</span><span class="nphotos">${im.fotos} foto${im.fotos===1?'':'s'}${im.videos.length?' · vídeo':''}</span></div>
         <div class="card-body">
           ${priceHtml(im)}
           <h3>${esc(im.titulo)}</h3>
@@ -373,7 +373,7 @@ function renderDetail(id){
     <div class="gal" id="gal">
       ${order.map((n,k)=>`<button data-n="${n}" aria-label="Abrir foto ${k+1}" ${k>4?'class="xtra"':''}><img ${k?'loading="lazy"':''} src="${img(im,n,k>0)}" alt="">${k===4&&im.fotos>5?`<span class="more">+${im.fotos-5} fotos</span>`:''}</button>`).join('')}
     </div>
-    <div class="gal-count">Deslize para ver as ${im.fotos} fotos · toque para ampliar</div>
+    <div class="gal-count">${im.fotos>1?`Deslize para ver as ${im.fotos} fotos · toque para ampliar`:'Toque para ampliar'}</div>
     <div class="d-grid">
       <div>
         <div class="d-kicker">${esc(im.tipo)} à venda · ${esc(im.codigo)}</div>
